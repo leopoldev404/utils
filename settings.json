@@ -1,0 +1,345 @@
+{
+  "workbench.activityBar.visible": false,
+  "editor.bracketPairColorization.enabled": false,
+  "editor.fontFamily": "Jetbrains Mono",
+  "editor.fontSize": 13,
+  "editor.lineHeight": 1.4,
+  "editor.minimap.enabled": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.fontLigatures": true,
+  "editor.codeLensFontFamily": "jetbrains mono",
+  "editor.cursorStyle": "underline",
+  "editor.cursorBlinking": "smooth",
+  "workbench.startupEditor": "none",
+  "workbench.settings.editor": "json",
+  "terminal.integrated.fontFamily": "jetbrains mono",
+  "terminal.integrated.defaultProfile.windows": "Dev",
+  "terminal.integrated.cursorStyle": "underline",
+  "editor.renderWhitespace": "none",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Dev": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "overrideName": true,
+      "icon": "terminal-bash",
+      "color": "terminal.ansiCyan"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    }
+  },
+  "terminal.integrated.cursorBlinking": true,
+  "editor.roundedSelection": true,
+  "editor.guides.indentation": false,
+  "editor.suggestSelection": "first",
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.git": false,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/bin": true,
+    "**/obj": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true,
+    "**/*.Identifier": true
+  },
+  "explorer.confirmDragAndDrop": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.confirmDelete": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "window.titleBarStyle": "custom",
+  "window.title": "${rootName}",
+  "terminal.integrated.fontSize": 13,
+  "glassit.alpha": 255,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorCustomizations": {
+    "[One Dark Pro]": {
+      "editor.background": "#161622",
+      "sideBar.background": "#161622",
+      "tab.activeBackground": "#161622",
+      "tab.activeBorder": "#161622",
+      "terminal.background": "#161622",
+      "editor.selectionBackground": "#8B5CF6",
+      "tab.activeForeground": "#8B5CF6",
+      "titleBar.activeBackground": "#161622",
+      "statusBar.background": "#161622",
+      "statusBarItem.remoteBackground": "#8B5CF6",
+      "statusBarItem.prominentBackground": "#8B5CF6",
+      "extensionButton.prominentBackground": "#8B5CF6",
+      "extensionBadge.remoteBackground": "#8B5CF6",
+      "editorCursor.foreground": "#8B5CF6",
+      "extensionButton.background": "#8B5CF6"
+    },
+    "[Default Dark Modern]": {
+      "editor.background": "#181818"
+    }
+  },
+  "editor.tokenColorCustomizations": {
+    "[One Dark Pro]": {
+      "textMateRules": [
+        {
+          "scope": [
+            "variable.other.object.cs",
+            "support.class",
+            "entity.name.type.class",
+            "entity.name.type.interface",
+            "interface",
+            "struct",
+            "entity.name.type.struct",
+            "entity.name.namespace",
+            "entity.name.namespace.cs",
+            "entity.name.type.enum",
+            "entity.name.type.type-parameter",
+            "entity.name.type.delegate"
+          ],
+          "settings": {
+            "foreground": "#EC4899"
+          }
+        },
+        {
+          "scope": [
+            "entity.name.variable.local.cs",
+            "variable",
+            "variable.other.readwrite",
+            "entity.name.variable.parameter.cs",
+            "variable.parameter",
+            "punctuation.definition.dictionary.begin.json.comments",
+            "punctuation.definition.dictionary.end.json.comments",
+            "punctuation.definition.array.begin.json.comments",
+            "punctuation.definition.array.end.json.comments",
+            "punctuation.separator.array.json.comments"
+          ],
+          "settings": {
+            "foreground": "#bbb",
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": [
+            "controlKeyword",
+            "keyword.control",
+            "keyword.control.flow.return.cs",
+            "keyword.other.using.cs",
+            "keyword.cs",
+            "keyword",
+            "storage.type.function.python",
+            "meta.function.python",
+            "storage.modifier.async.js",
+            "storage.type.js",
+            "meta.var.expr.js",
+            "storage.type.function.js"
+          ],
+          "settings": {
+            "foreground": "#6366F1"
+          }
+        },
+        {
+          "scope": [
+            "entity.name.function.cs",
+            "method",
+            "entity.name.function.member"
+          ],
+          "settings": {
+            "foreground": "#F59E0B"
+          }
+        },
+        {
+          "scope": [
+            "field",
+            "entity.name.variable.field.cs",
+            "variable.other.object.cs"
+          ],
+          "settings": {
+            "foreground": "#14B8A6"
+          }
+        },
+        {
+          "scope": [
+            "string",
+            "string.quoted.double.json.comments",
+            "string.quoted.double.cs"
+          ],
+          "settings": {
+            "foreground": "#14B8A6"
+          }
+        },
+        {
+          "scope": [
+            "punctuation.support.type.property-name.end.json.comments",
+            "punctuation.support.type.property-name.begin.json.comments",
+            "support.type.property-name.json.comments",
+            "string.json.comments",
+            "meta.structure.dictionary.json.comments",
+            "meta.structure.array.json.comments",
+            "meta.structure.dictionary.value.json.comments",
+            "meta.structure.dictionary.json.comments",
+            "meta.structure.dictionary.value.json.comments",
+            "meta.structure.dictionary.json.comments",
+            "meta.structure.dictionary.value.json.comments",
+            "meta.structure.dictionary.json.comments",
+            "source.json.comments",
+            "entity.name.tag.yaml",
+            "entity.name.tag",
+            "string.unquoted.plain.out.yaml"
+          ],
+          "settings": {
+            "foreground": "#C792EA"
+          }
+        }
+      ]
+    },
+    "[Fleety]": {
+      "variables": "#9CDCFE"
+    },
+    "[Default Dark Modern]": {
+      "strings": "#E394DC",
+      "textMateRules": [
+        {
+          "scope": [
+            "keyword.control.flow.python",
+            "keyword.control.import.python"
+          ],
+          "settings": {
+            "foreground": "#569CD6"
+          }
+        }
+      ]
+    }
+  },
+  "redhat.telemetry.enabled": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "remote.SSH.remotePlatform": {
+    "3.75.216.170": "linux",
+    "aws-ec2-dev-01": "linux",
+    "aws-ec2-dev-02": "linux"
+  },
+  "cSpell.allowCompoundWords": true,
+  "cSpell.userWords": [
+    "anyio",
+    "bitnami",
+    "boto",
+    "botocore",
+    "Bson",
+    "cascadia",
+    "CQRS",
+    "donot",
+    "esbenp",
+    "Fleety",
+    "fwlog",
+    "glassit",
+    "harlock",
+    "httpx",
+    "Intelli",
+    "isort",
+    "kpis",
+    "Logispin",
+    "Mediat",
+    "meraki",
+    "msps",
+    "MSPV",
+    "mypy",
+    "pycache",
+    "pydantic",
+    "pymongo",
+    "pytest",
+    "Quizz",
+    "redisdb",
+    "Roboto",
+    "sdwan",
+    "Serilog",
+    "siem",
+    "swvc",
+    "uvloop",
+    "VBIT",
+    "Velo",
+    "velocloud",
+    "Xunit",
+    "yuki"
+  ],
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": false,
+      "source.organizeImports": true
+    },
+    "editor.formatOnType": true
+  },
+  "editor.formatOnSave": true,
+  "[csharp]": {
+    "editor.formatOnSave": true
+  },
+  "python.formatting.provider": "black",
+  "terminal.integrated.gpuAcceleration": "off",
+  "yaml.customTags": [
+    "!And",
+    "!And sequence",
+    "!If",
+    "!If sequence",
+    "!Not",
+    "!Not sequence",
+    "!Equals",
+    "!Equals sequence",
+    "!Or",
+    "!Or sequence",
+    "!FindInMap",
+    "!FindInMap sequence",
+    "!Base64",
+    "!Join",
+    "!Join sequence",
+    "!Cidr",
+    "!Ref",
+    "!Sub",
+    "!Sub sequence",
+    "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
+    "!ImportValue sequence",
+    "!Select",
+    "!Select sequence",
+    "!Split",
+    "!Split sequence"
+  ],
+  "workbench.editor.enablePreview": false,
+  "workbench.productIconTheme": "icons-carbon",
+  "window.menuBarVisibility": "compact",
+  "workbench.layoutControl.enabled": false,
+  "window.commandCenter": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "One Dark Pro"
+}
