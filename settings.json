@@ -83,16 +83,32 @@
       "tab.activeBackground": "#161622",
       "tab.activeBorder": "#161622",
       "terminal.background": "#161622",
-      "editor.selectionBackground": "#8B5CF6",
-      "tab.activeForeground": "#8B5CF6",
+      "editor.selectionBackground": "#6B57FF",
+      "tab.activeForeground": "#6B57FF",
       "titleBar.activeBackground": "#161622",
       "statusBar.background": "#161622",
-      "statusBarItem.remoteBackground": "#8B5CF6",
-      "statusBarItem.prominentBackground": "#8B5CF6",
-      "extensionButton.prominentBackground": "#8B5CF6",
-      "extensionBadge.remoteBackground": "#8B5CF6",
-      "editorCursor.foreground": "#8B5CF6",
-      "extensionButton.background": "#8B5CF6"
+      "statusBarItem.remoteBackground": "#6B57FF",
+      "statusBarItem.prominentBackground": "#6B57FF",
+      "extensionButton.prominentBackground": "#6B57FF",
+      "extensionBadge.remoteBackground": "#6B57FF",
+      "editorCursor.foreground": "#6B57FF",
+      "extensionButton.background": "#6B57FF"
+    },
+    "[Fleety]": {
+      "editor.background": "#16181d",
+      "terminal.background": "#16181d",
+      "activityBar.background": "#16181d",
+      "sideBar.background": "#16181d",
+      "editor.selectionBackground": "#6B57FF",
+      "tab.activeForeground": "#6B57FF",
+      "tab.inactiveBackground": "#16181d",
+      "titleBar.activeBackground": "#16181d",
+      "statusBarItem.remoteBackground": "#6B57FF",
+      "statusBarItem.prominentBackground": "#6B57FF",
+      "extensionButton.prominentBackground": "#6B57FF",
+      "extensionBadge.remoteBackground": "#6B57FF",
+      "editorCursor.foreground": "#6B57FF",
+      "extensionButton.background": "#6B57FF"
     },
     "[Default Dark Modern]": {
       "editor.background": "#181818"
@@ -117,7 +133,7 @@
             "entity.name.type.delegate"
           ],
           "settings": {
-            "foreground": "#EC4899"
+            "foreground": "#C792EA"
           }
         },
         {
@@ -154,17 +170,7 @@
             "storage.type.function.js"
           ],
           "settings": {
-            "foreground": "#6366F1"
-          }
-        },
-        {
-          "scope": [
-            "entity.name.function.cs",
-            "method",
-            "entity.name.function.member"
-          ],
-          "settings": {
-            "foreground": "#F59E0B"
+            "foreground": "#569CD6"
           }
         },
         {
@@ -174,7 +180,7 @@
             "variable.other.object.cs"
           ],
           "settings": {
-            "foreground": "#14B8A6"
+            "foreground": "#9CDCFE"
           }
         },
         {
@@ -184,7 +190,7 @@
             "string.quoted.double.cs"
           ],
           "settings": {
-            "foreground": "#14B8A6"
+            "foreground": "#92D69E"
           }
         },
         {
