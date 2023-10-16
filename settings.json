@@ -78,15 +78,15 @@
   },
   "workbench.colorCustomizations": {
     "[One Dark Pro]": {
-      "editor.background": "#171717",
-      "sideBar.background": "#171717",
-      "tab.activeBackground": "#171717",
-      "tab.activeBorder": "#171717",
-      "terminal.background": "#171717",
+      "editor.background": "#181818",
+      "sideBar.background": "#181818",
+      "tab.activeBackground": "#181818",
+      "tab.activeBorder": "#181818",
+      "terminal.background": "#181818",
       "editor.selectionBackground": "#6B57FF",
       "tab.activeForeground": "#6B57FF",
-      "titleBar.activeBackground": "#171717",
-      "statusBar.background": "#171717",
+      "titleBar.activeBackground": "#181818",
+      "statusBar.background": "#181818",
       "statusBarItem.remoteBackground": "#6B57FF",
       "statusBarItem.prominentBackground": "#6B57FF",
       "extensionButton.prominentBackground": "#6B57FF",
@@ -100,106 +100,17 @@
       "textMateRules": [
         {
           "scope": [
-            "variable.other.object.cs",
-            "support.class",
-            "entity.name.type.class",
-            "entity.name.type.interface",
-            "interface",
-            "struct",
-            "entity.name.type.struct",
-            "entity.name.namespace",
-            "entity.name.namespace.cs",
-            "entity.name.type.enum",
-            "entity.name.type.type-parameter",
-            "entity.name.type.delegate",
-            "string.quoted.double.json.comments",
-            "string.unquoted.plain.out.yaml",
-            "entity.name.tag.yaml",
-            "source.yml"
+            "support.type.property-name.json.comments",
+            "support.type.property-name.json",
+            "punctuation.support.type.property-name.begin.json",
+            "punctuation.support.type.property-name.end.json",
+            "punctuation.support.type.property-name.begin.json.comments",
+            "punctuation.support.type.property-name.end.json.comments",
+            "string.json.comments",
+            "entity.name.tag.yaml"
           ],
           "settings": {
             "foreground": "#D879F2"
-          }
-        },
-        {
-          "scope": ["string"],
-          "settings": {
-            "foreground": "#A3E89F"
-          }
-        },
-        {
-          "scope": [
-            "entity.name.variable.local",
-            "variable",
-            "variable.other.readwrite",
-            "entity.name.variable.parameter",
-            "variable.parameter",
-            "punctuation.definition.dictionary.begin.json.comments",
-            "punctuation.definition.dictionary.end.json.comments",
-            "punctuation.definition.array.begin.json.comments",
-            "punctuation.definition.array.end.json.comments",
-            "punctuation.separator.array.json.comments",
-            "punctuation.definition.parameters.end",
-            "punctuation.definition.parameters.begin"
-          ],
-          "settings": {
-            "foreground": "#ABB2BF",
-            "fontStyle": ""
-          }
-        },
-        {
-          "scope": [
-            "controlKeyword",
-            "keyword.control",
-            "keyword.control.flow.return.cs",
-            "keyword.other.using.cs",
-            "keyword.cs",
-            "keyword",
-            "storage.type.function.python",
-            "meta.function.python",
-            "storage.modifier.async.js",
-            "storage.type.js",
-            "meta.var.expr.js",
-            "storage.type.function.js",
-            "constant.language.python",
-            "variable.other.constant",
-            "storage.type.class.python",
-            "storage.type.function.async.python",
-            "variable.parameter.function.language.special.self.python",
-            "punctuation.support.type.property-name.end.json.comments",
-            "punctuation.support.type.property-name.begin.json.comments",
-            "support.type.property-name.json.comments",
-            "string.json.comments",
-            "meta.structure.dictionary.json.comments",
-            "meta.structure.array.json.comments",
-            "meta.structure.dictionary.value.json.comments",
-            "meta.structure.dictionary.json.comments",
-            "meta.structure.dictionary.value.json.comments",
-            "meta.structure.dictionary.json.comments",
-            "meta.structure.dictionary.value.json.comments",
-            "meta.structure.dictionary.json.comments",
-            "source.json.comments",
-            "entity.name.tag.yaml",
-            "entity.name.tag",
-            "string.unquoted.plain.out.yaml",
-            "keyword.operator.new.ts",
-            "variable.language.this.ts",
-            "storage.modifier.ts",
-            "storage.type.class.ts",
-            "variable.other.object.ts"
-          ],
-          "settings": {
-            "foreground": "#9F88F2"
-          }
-        },
-        {
-          "scope": [
-            "field",
-            "entity.name.variable.field.cs",
-            "variable.other.object.cs"
-          ],
-          "settings": {
-            "foreground": "#50D4F2"
           }
         }
       ]
