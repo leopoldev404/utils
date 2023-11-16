@@ -1,18 +1,19 @@
 {
-  "workbench.activityBar.visible": false,
+  "workbench.activityBar.visible": true,
+  "explorer.compactFolders": false,
   "editor.bracketPairColorization.enabled": false,
-  "editor.fontFamily": "jetbrains mono",
+  "editor.fontFamily": "fira code retina",
   "editor.fontSize": 13,
   "editor.lineHeight": 1.4,
   "editor.minimap.enabled": true,
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.fontLigatures": true,
-  "editor.codeLensFontFamily": "jetbrains mono",
+  "editor.codeLensFontFamily": "fira code retina",
   "editor.cursorStyle": "underline",
   "editor.cursorBlinking": "smooth",
   "workbench.startupEditor": "none",
   "workbench.settings.editor": "json",
-  "terminal.integrated.fontFamily": "jetbrains mono",
+  "terminal.integrated.fontFamily": "roboto mono",
   "terminal.integrated.defaultProfile.windows": "Dev",
   "terminal.integrated.cursorStyle": "underline",
   "editor.renderWhitespace": "none",
@@ -78,21 +79,13 @@
   },
   "workbench.colorCustomizations": {
     "[One Dark Pro]": {
-      "editor.background": "#181818",
-      "sideBar.background": "#181818",
-      "tab.activeBackground": "#181818",
-      "tab.activeBorder": "#181818",
-      "terminal.background": "#181818",
-      "editor.selectionBackground": "#6B57FF",
-      "tab.activeForeground": "#6B57FF",
-      "titleBar.activeBackground": "#181818",
-      "statusBar.background": "#181818",
-      "statusBarItem.remoteBackground": "#6B57FF",
-      "statusBarItem.prominentBackground": "#6B57FF",
-      "extensionButton.prominentBackground": "#6B57FF",
-      "extensionBadge.remoteBackground": "#6B57FF",
-      "editorCursor.foreground": "#6B57FF",
-      "extensionButton.background": "#6B57FF"
+      "editor.background": "#1E1F29",
+      "activityBar.background": "#1E1F29",
+      "sideBar.background": "#1E1F29",
+      "titleBar.activeBackground": "#1E1F29",
+      "statusBar.background": "#1E1F29",
+      "terminal.background": "#1E1F29",
+      "tab.activeBorder": "#1E1F29"
     }
   },
   "editor.tokenColorCustomizations": {
@@ -107,13 +100,20 @@
             "punctuation.support.type.property-name.begin.json.comments",
             "punctuation.support.type.property-name.end.json.comments",
             "string.json.comments",
-            "entity.name.tag.yaml"
+            "entity.name.tag.yaml",
+            "entity.name.tag.html"
           ],
           "settings": {
             "foreground": "#D879F2"
           }
         }
       ]
+    },
+    "[Default Dark Modern]": {
+      "keywords": "#9F88F2",
+      "strings": "#A3E89F",
+      "functions": "#61AFEF",
+      "variables": "#bbb"
     }
   },
   "redhat.telemetry.enabled": false,
@@ -135,12 +135,15 @@
     "botocore",
     "Bson",
     "cascadia",
+    "cobertura",
     "CQRS",
     "donot",
     "esbenp",
+    "fira",
     "Fleety",
     "fwlog",
     "glassit",
+    "graphdb",
     "harlock",
     "httpx",
     "Intelli",
@@ -152,6 +155,7 @@
     "msps",
     "MSPV",
     "mypy",
+    "nproc",
     "pycache",
     "pydantic",
     "pymongo",
@@ -163,6 +167,7 @@
     "Serilog",
     "siem",
     "swvc",
+    "unflatten",
     "uvloop",
     "VBIT",
     "Velo",
@@ -178,11 +183,11 @@
   },
   "[python]": {
     "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.codeActionsOnSave": {
-      "source.fixAll": false,
+      "source.fixAll": true,
       "source.organizeImports": true
-    },
-    "editor.formatOnType": true
+    }
   },
   "editor.formatOnSave": true,
   "[csharp]": {
@@ -221,11 +226,17 @@
   ],
   "workbench.editor.enablePreview": false,
   "workbench.productIconTheme": "icons-carbon",
-  "window.menuBarVisibility": "compact",
-  "workbench.layoutControl.enabled": false,
-  "window.commandCenter": true,
   "liveServer.settings.donotVerifyTags": true,
   "workbench.iconTheme": "material-icon-theme",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.colorTheme": "One Dark Pro"
+  "workbench.colorTheme": "One Dark Pro",
+  "python.analysis.extraPaths": [
+    "c:\\Users\\leopol\\.vscode\\extensions\\continue.continue-0.2.0-win32-x64"
+  ],
+  "python.autoComplete.extraPaths": [
+    "c:\\Users\\leopol\\.vscode\\extensions\\continue.continue-0.2.0-win32-x64"
+  ],
+  "window.commandCenter": true,
+  "window.menuBarVisibility": "compact",
+  "workbench.layoutControl.enabled": false
 }
