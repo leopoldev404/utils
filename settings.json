@@ -1,19 +1,21 @@
 {
-  "workbench.activityBar.visible": true,
+  "remote.autoForwardPorts": false,
   "explorer.compactFolders": false,
+  "zenMode.hideActivityBar": true,
+
   "editor.bracketPairColorization.enabled": false,
-  "editor.fontFamily": "fira code retina",
+  "editor.fontFamily": "jetbrains mono",
+  "editor.lineHeight": 1.6,
   "editor.fontSize": 13,
-  "editor.lineHeight": 1.4,
-  "editor.minimap.enabled": true,
+  "editor.minimap.enabled": false,
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.fontLigatures": true,
-  "editor.codeLensFontFamily": "fira code retina",
-  "editor.cursorStyle": "underline",
+  "editor.codeLensFontFamily": "jetbrains mono",
+  "editor.cursorStyle": "block-outline",
   "editor.cursorBlinking": "smooth",
   "workbench.startupEditor": "none",
   "workbench.settings.editor": "json",
-  "terminal.integrated.fontFamily": "roboto mono",
+  "terminal.integrated.fontFamily": "jetbrains mono",
   "terminal.integrated.defaultProfile.windows": "Dev",
   "terminal.integrated.cursorStyle": "underline",
   "editor.renderWhitespace": "none",
@@ -65,7 +67,6 @@
   },
   "explorer.confirmDelete": false,
   "diffEditor.ignoreTrimWhitespace": false,
-  "liveServer.settings.donotShowInfoMsg": true,
   "window.titleBarStyle": "custom",
   "window.title": "${rootName}",
   "terminal.integrated.fontSize": 13,
@@ -78,17 +79,23 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.colorCustomizations": {
-    "[One Dark Pro]": {
-      "editor.background": "#1E1F29",
-      "activityBar.background": "#1E1F29",
-      "sideBar.background": "#1E1F29",
-      "titleBar.activeBackground": "#1E1F29",
-      "statusBar.background": "#1E1F29",
-      "terminal.background": "#1E1F29",
-      "tab.activeBorder": "#1E1F29"
+    "[*]": {
+      "editor.background": "#252432",
+      "activityBar.background": "#252432",
+      "sideBar.background": "#252432",
+      "titleBar.activeBackground": "#252432",
+      "statusBar.background": "#252432",
+      "terminal.background": "#252432",
+      "terminal.foreground": "#bbb",
+      "tab.activeBorder": "#252432",
+      "tab.inactiveBackground": "#252432",
+      "panel.background": "#252432"
     }
   },
   "editor.tokenColorCustomizations": {
+    "[Default Dark Modern]": {
+      "keywords": "#569CD6"
+    },
     "[One Dark Pro]": {
       "textMateRules": [
         {
@@ -104,16 +111,10 @@
             "entity.name.tag.html"
           ],
           "settings": {
-            "foreground": "#D879F2"
+            "foreground": "#9F88F2"
           }
         }
       ]
-    },
-    "[Default Dark Modern]": {
-      "keywords": "#9F88F2",
-      "strings": "#A3E89F",
-      "functions": "#61AFEF",
-      "variables": "#bbb"
     }
   },
   "redhat.telemetry.enabled": false,
@@ -129,33 +130,51 @@
   },
   "cSpell.allowCompoundWords": true,
   "cSpell.userWords": [
+    "ADOM",
+    "adoms",
+    "ADOMV",
     "anyio",
     "bitnami",
+    "Blazor",
     "boto",
     "botocore",
     "Bson",
     "cascadia",
     "cobertura",
     "CQRS",
+    "devid",
+    "devs",
     "donot",
+    "dvmdb",
     "esbenp",
     "fira",
     "Fleety",
+    "forti",
+    "foslic",
     "fwlog",
     "glassit",
     "graphdb",
     "harlock",
+    "hdisk",
     "httpx",
+    "INITDB",
     "Intelli",
     "isort",
     "kpis",
     "Logispin",
+    "maxvdom",
     "Mediat",
     "meraki",
+    "mgmt",
     "msps",
     "MSPV",
     "mypy",
+    "Npgsql",
     "nproc",
+    "nsxt",
+    "opmode",
+    "prds",
+    "prio",
     "pycache",
     "pydantic",
     "pymongo",
@@ -164,14 +183,20 @@
     "redisdb",
     "Roboto",
     "sdwan",
+    "sdwanedge",
     "Serilog",
     "siem",
+    "ssls",
     "swvc",
+    "todoapikey",
+    "todos",
     "unflatten",
     "uvloop",
     "VBIT",
+    "VDOM",
     "Velo",
     "velocloud",
+    "xdist",
     "Xunit",
     "yuki"
   ],
@@ -193,7 +218,6 @@
   "[csharp]": {
     "editor.formatOnSave": true
   },
-  "python.formatting.provider": "black",
   "terminal.integrated.gpuAcceleration": "off",
   "yaml.customTags": [
     "!And",
@@ -225,18 +249,24 @@
     "!Split sequence"
   ],
   "workbench.editor.enablePreview": false,
-  "workbench.productIconTheme": "icons-carbon",
-  "liveServer.settings.donotVerifyTags": true,
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.iconTheme": "symbols",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.colorTheme": "One Dark Pro",
   "python.analysis.extraPaths": [
-    "c:\\Users\\leopol\\.vscode\\extensions\\continue.continue-0.2.0-win32-x64"
+    "c:\\Users\\leopol\\.vscode\\extensions\\continue.continue-0.2.0-win32-x64",
+    "c:\\Users\\leopol\\.vscode\\extensions\\continue.continue-0.6.9-win32-x64"
   ],
   "python.autoComplete.extraPaths": [
-    "c:\\Users\\leopol\\.vscode\\extensions\\continue.continue-0.2.0-win32-x64"
+    "c:\\Users\\leopol\\.vscode\\extensions\\continue.continue-0.2.0-win32-x64",
+    "c:\\Users\\leopol\\.vscode\\extensions\\continue.continue-0.6.9-win32-x64"
   ],
-  "window.commandCenter": true,
+  "yaml.schemas": {
+    "file:///home/leo/.vscode-server/extensions/docsmsft.docs-yaml-1.0.1/dist/toc.schema.json": "/toc\\.yml/i"
+  },
+  "git.openRepositoryInParentFolders": "never",
+  "workbench.colorTheme": "One Dark Pro",
+  "symbols.hidesExplorerArrows": false,
   "window.menuBarVisibility": "compact",
+  "workbench.activityBar.location": "hidden",
   "workbench.layoutControl.enabled": false
 }
