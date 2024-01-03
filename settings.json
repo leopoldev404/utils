@@ -2,7 +2,6 @@
   "remote.autoForwardPorts": false,
   "explorer.compactFolders": false,
   "zenMode.hideActivityBar": true,
-
   "editor.bracketPairColorization.enabled": false,
   "editor.fontFamily": "jetbrains mono",
   "editor.lineHeight": 1.6,
