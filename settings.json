@@ -81,18 +81,19 @@
   },
   "workbench.colorCustomizations": {
     "[*]": {
-      "editor.background": "#1E1E1E",
-      "activityBar.background": "#1E1E1E",
-      "sideBar.background": "#1E1E1E",
-      "titleBar.activeBackground": "#1E1E1E",
-      "statusBar.background": "#1E1E1E",
-      "terminal.background": "#1E1E1E",
+      "editor.background": "#111111",
+      "activityBar.background": "#111111",
+      "sideBar.background": "#111111",
+      "titleBar.activeBackground": "#111111",
+      "statusBar.background": "#111111",
+      "terminal.background": "#111111",
       "terminal.foreground": "#bbb",
-      "tab.activeBorder": "#1E1E1E",
-      "tab.inactiveBackground": "#1E1E1E",
-      "panel.background": "#1E1E1E",
-      "statusBar.border": "#1E1E1E",
-      "titleBar.border": "#1E1E1E"
+      "tab.activeBorder": "#111111",
+      "tab.inactiveBackground": "#111111",
+      "panel.background": "#111111",
+      "statusBar.border": "#111111",
+      "titleBar.border": "#111111",
+      "editor.lineHighlightBackground": "#111111"
     }
   },
   "editor.tokenColorCustomizations": {
@@ -109,7 +110,8 @@
             "support.type.property-name.json",
             "string.json",
             "meta.structure.dictionary.json",
-            "source.json"
+            "source.json",
+            "entity.name.tag.yaml"
           ],
           "settings": {
             "foreground": "#9F88F2"
@@ -273,24 +275,20 @@
     "c:\\Users\\leopol\\.vscode\\extensions\\continue.continue-0.6.9-win32-x64"
   ],
   "yaml.schemas": {
-    "file:///home/leo/.vscode-server/extensions/docsmsft.docs-yaml-1.0.1/dist/toc.schema.json": "/toc\\.yml/i"
+    "file:///home/leo/.vscode-server/extensions/docsmsft.docs-yaml-1.0.4/dist/toc.schema.json": "/toc\\.yml/i"
   },
   "git.openRepositoryInParentFolders": "never",
   "workbench.activityBar.location": "hidden",
-  "workbench.layoutControl.enabled": false,
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "symbols.hidesExplorerArrows": false,
   "go.toolsManagement.autoUpdate": true,
-  "vs-kubernetes": {
-    "vscode-kubernetes.minikube-path-linux": "/home/leo/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
-  },
   "extensions.ignoreRecommendations": true,
-  "workbench.editor.showTabs": "none",
+  "workbench.layoutControl.enabled": false,
   "window.menuBarVisibility": "compact",
+  "workbench.editor.showTabs": "none",
   "workbench.colorTheme": "One Dark Pro"
 }
