@@ -81,40 +81,32 @@
   },
   "workbench.colorCustomizations": {
     "[*]": {
-      "editor.background": "#111111",
-      "activityBar.background": "#111111",
-      "sideBar.background": "#111111",
-      "titleBar.activeBackground": "#111111",
-      "statusBar.background": "#111111",
-      "terminal.background": "#111111",
-      "terminal.foreground": "#bbb",
-      "tab.activeBorder": "#111111",
-      "tab.inactiveBackground": "#111111",
-      "panel.background": "#111111",
-      "statusBar.border": "#111111",
-      "titleBar.border": "#111111",
-      "editor.lineHighlightBackground": "#111111"
+      "editor.background": "#191919",
+      "activityBar.background": "#191919",
+      "sideBar.background": "#191919",
+      "titleBar.activeBackground": "#191919",
+      "statusBar.background": "#191919",
+      "terminal.background": "#191919",
+      "terminal.foreground": "#ABB2BF",
+      "statusBarItem.remoteBackground": "#191919",
+      "statusBarItem.remoteForeground": "#ABB2BF",
+      "tab.activeBorder": "#191919",
+      "tab.inactiveBackground": "#191919",
+      "panel.background": "#191919",
+      "statusBar.border": "#191919",
+      "titleBar.border": "#191919",
+      "editor.lineHighlightBackground": "#191919",
+      "extensionButton.background": "#61AFEF"
     }
   },
   "editor.tokenColorCustomizations": {
-    "[Default Dark Modern]": {
-      "keywords": "#569CD6",
-      "variables": "#bbb",
-      "functions": "#9CDCFE"
-    },
+    "[Default Dark Modern]": { "keywords": "#569CD6" },
     "[One Dark Pro]": {
       "textMateRules": [
         {
-          "scope": [
-            "support.type.property-name.json.comments",
-            "support.type.property-name.json",
-            "string.json",
-            "meta.structure.dictionary.json",
-            "source.json",
-            "entity.name.tag.yaml"
-          ],
+          "scope": ["variable.other.property", "variable.other.readwrite"],
           "settings": {
-            "foreground": "#9F88F2"
+            "foreground": "#ABB2BF"
           }
         }
       ]
@@ -158,16 +150,21 @@
     "foslic",
     "fwlog",
     "glassit",
+    "gomail",
     "graphdb",
+    "GTID",
     "harlock",
     "hdisk",
     "httpx",
     "INITDB",
+    "Inno",
+    "innodb",
     "INOUT",
     "Intelli",
     "ISNULL",
     "isort",
     "jmeter",
+    "jsonable",
     "kpis",
     "kubelet",
     "LCASE",
@@ -180,9 +177,11 @@
     "msps",
     "MSPV",
     "mypy",
+    "mysqld",
     "Npgsql",
     "nproc",
     "nsxt",
+    "opco",
     "opmode",
     "prds",
     "prio",
@@ -196,19 +195,25 @@
     "sdwan",
     "sdwanedge",
     "Serilog",
+    "sharded",
     "siem",
+    "signin",
+    "signup",
     "ssids",
     "ssls",
     "swvc",
     "todoapikey",
     "todos",
     "UCASE",
+    "UNCONFIGURED",
     "unflatten",
+    "UNHEX",
     "uvloop",
     "VBIT",
     "VDOM",
     "Velo",
     "velocloud",
+    "Vitess",
     "xdist",
     "Xunit",
     "yuki"
@@ -290,5 +295,7 @@
   "workbench.layoutControl.enabled": false,
   "window.menuBarVisibility": "compact",
   "workbench.editor.showTabs": "none",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "symbols.hidesExplorerArrows": false,
   "workbench.colorTheme": "One Dark Pro"
 }
