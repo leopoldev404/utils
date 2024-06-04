@@ -1,0 +1,13 @@
+- techs
+- excalidraw
+- daily.dev
+- vscode
+- terminal
+- wsl
+- firefox
+- ohmyzsh
+- ohmyposh
+- bruno
+- wsl
+- zsh
+- 
