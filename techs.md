@@ -10,4 +10,3 @@
 - bruno
 - wsl
 - zsh
-- 
