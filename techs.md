@@ -10,3 +10,9 @@
 - bruno
 - wsl
 - zsh
+- monospace theme
+- one dark pro
+- python ruff
+- code spell checker
+- git graph
+- prettier
