@@ -54,6 +54,7 @@
     "**/.DS_Store": true,
     "**/Thumbs.db": true,
     "**/obj": true,
+    "**/bin": true,
     "**/.classpath": true,
     "**/.project": true,
     "**/.settings": true,
@@ -81,30 +82,34 @@
   },
   "workbench.colorCustomizations": {
     "[*]": {
-      "editor.background": "#191919",
-      "activityBar.background": "#191919",
-      "sideBar.background": "#191919",
-      "titleBar.activeBackground": "#191919",
-      "statusBar.background": "#191919",
-      "terminal.background": "#191919",
+      "editor.background": "#212529",
+      "activityBar.background": "#212529",
+      "sideBar.background": "#212529",
+      "titleBar.activeBackground": "#212529",
+      "statusBar.background": "#212529",
+      "terminal.background": "#212529",
       "terminal.foreground": "#ABB2BF",
-      "statusBarItem.remoteBackground": "#191919",
+      "statusBarItem.remoteBackground": "#212529",
       "statusBarItem.remoteForeground": "#ABB2BF",
-      "tab.activeBorder": "#191919",
-      "tab.inactiveBackground": "#191919",
-      "panel.background": "#191919",
-      "statusBar.border": "#191919",
-      "titleBar.border": "#191919",
-      "editor.lineHighlightBackground": "#191919",
-      "extensionButton.background": "#61AFEF"
+      "tab.activeBorder": "#212529",
+      "tab.inactiveBackground": "#212529",
+      "panel.background": "#212529",
+      "statusBar.border": "#212529",
+      "titleBar.border": "#212529",
+      "editor.lineHighlightBackground": "#212529"
     }
   },
   "editor.tokenColorCustomizations": {
     "[Default Dark Modern]": { "keywords": "#569CD6" },
     "[One Dark Pro]": {
+      "variables": "#ABB2BF",
       "textMateRules": [
         {
-          "scope": ["variable.other.property", "variable.other.readwrite"],
+          "scope": [
+            "variable.parameter",
+            "variable.other.property",
+            "variable.other.readwrite"
+          ],
           "settings": {
             "foreground": "#ABB2BF"
           }
@@ -134,6 +139,8 @@
     "boto",
     "botocore",
     "Bson",
+    "Capelli",
+    "capellicode",
     "cascadia",
     "CLOB",
     "cobertura",
