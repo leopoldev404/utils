@@ -19,6 +19,10 @@ var app = builder.Build();
 await app.RunAsync();
 EOL
 touch Api/appsettings.json
+cat <<EOL > Api/appsettings.json
+{}
+EOL
+
 dotnet new classlib -n Biz
 dotnet new classlib -n Persistence
 dotnet add Api reference Biz Persistence
