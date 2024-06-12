@@ -30,7 +30,11 @@ dotnet add Persistence reference Biz
 cd ../tests
 dotnet new xunit -n UnitTests
 dotnet new xunit -n IntegrationTests
+
 cd ..
+dotnet add tests/IntegrationTests reference src/Api
+dotnet add tests/UnitTests reference src/Biz src/Persistence
+
 dotnet new sln -n $PROJECT_NAME
 dotnet sln add src/Api
 dotnet sln add src/Biz
