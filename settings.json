@@ -84,19 +84,19 @@
   },
   "workbench.colorCustomizations": {
     "[One Dark Pro]": {
-      "editor.background": "#212529",
-      "activityBar.background": "#212529",
-      "sideBar.background": "#212529",
-      "titleBar.activeBackground": "#212529",
-      "statusBar.background": "#212529",
-      "terminal.background": "#212529",
+      "editor.background": "#1F1E24",
+      "activityBar.background": "#1F1E24",
+      "sideBar.background": "#1F1E24",
+      "titleBar.activeBackground": "#1F1E24",
+      "statusBar.background": "#1F1E24",
+      "terminal.background": "#1F1E24",
       "terminal.foreground": "#ABB2BF",
-      "tab.activeBorder": "#212529",
-      "tab.inactiveBackground": "#212529",
-      "panel.background": "#212529",
-      "statusBar.border": "#212529",
-      "titleBar.border": "#212529",
-      "editor.lineHighlightBackground": "#212529"
+      "tab.activeBorder": "#1F1E24",
+      "tab.inactiveBackground": "#1F1E24",
+      "panel.background": "#1F1E24",
+      "statusBar.border": "#1F1E24",
+      "titleBar.border": "#1F1E24",
+      "editor.lineHighlightBackground": "#1F1E24"
     }
   },
   "editor.tokenColorCustomizations": {
