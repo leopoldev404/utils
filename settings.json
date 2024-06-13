@@ -1,4 +1,5 @@
 {
+  "window.title": "${dirty}${activeEditorShort}",
   "workbench.tree.renderIndentGuides": "none",
   "remote.autoForwardPorts": false,
   "explorer.compactFolders": false,
@@ -13,6 +14,7 @@
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.fontLigatures": true,
   "editor.codeLensFontFamily": "gitlab sans",
+  "editor.lineNumbers": "off",
   "markdown.preview.fontFamily": "gitlab sans",
   "editor.cursorStyle": "underline",
   "editor.cursorBlinking": "smooth",
@@ -81,7 +83,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.colorCustomizations": {
-    "[*]": {
+    "[One Dark Pro]": {
       "editor.background": "#212529",
       "activityBar.background": "#212529",
       "sideBar.background": "#212529",
@@ -89,8 +91,6 @@
       "statusBar.background": "#212529",
       "terminal.background": "#212529",
       "terminal.foreground": "#ABB2BF",
-      "statusBarItem.remoteBackground": "#212529",
-      "statusBarItem.remoteForeground": "#ABB2BF",
       "tab.activeBorder": "#212529",
       "tab.inactiveBackground": "#212529",
       "panel.background": "#212529",
@@ -100,18 +100,22 @@
     }
   },
   "editor.tokenColorCustomizations": {
-    "[Default Dark Modern]": { "keywords": "#569CD6" },
+    "[Default Dark Modern]": {
+      "keywords": "#569CD6"
+    },
     "[One Dark Pro]": {
       "variables": "#ABB2BF",
       "textMateRules": [
         {
-          "scope": [
-            "variable.parameter",
-            "variable.other.property",
-            "variable.other.readwrite"
-          ],
+          "scope": ["variable.parameter", "variable.other.readwrite"],
           "settings": {
             "foreground": "#ABB2BF"
+          }
+        },
+        {
+          "scope": "variable.other.property",
+          "settings": {
+            "foreground": "#DE7C84"
           }
         }
       ]
@@ -134,6 +138,7 @@
     "adoms",
     "ADOMV",
     "anyio",
+    "Barba",
     "bitnami",
     "Blazor",
     "boto",
@@ -148,6 +153,7 @@
     "CQRS",
     "devid",
     "devs",
+    "docsmsft",
     "donot",
     "dvmdb",
     "esbenp",
@@ -209,6 +215,7 @@
     "ssids",
     "ssls",
     "swvc",
+    "Taglio",
     "todoapikey",
     "todos",
     "UCASE",
@@ -235,8 +242,8 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.codeActionsOnSave": {
-      "source.fixAll": true,
-      "source.organizeImports": true
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
     }
   },
   "editor.formatOnSave": true,
@@ -275,7 +282,6 @@
     "!Split sequence"
   ],
   "workbench.editor.enablePreview": false,
-  "workbench.productIconTheme": "fluent-icons",
   "workbench.iconTheme": "monospace-icons",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "python.analysis.extraPaths": [
@@ -299,10 +305,18 @@
   },
   "go.toolsManagement.autoUpdate": true,
   "extensions.ignoreRecommendations": true,
-  "workbench.layoutControl.enabled": false,
-  "window.menuBarVisibility": "compact",
   "workbench.editor.showTabs": "none",
-  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.enableMultiLinePasteWarning": "always",
+  "workbench.colorTheme": "One Dark Pro",
+  "[aspnetcorerazor]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "update.showReleaseNotes": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.editor.editorActionsLocation": "hidden",
+  "window.menuBarVisibility": "compact",
+  "breadcrumbs.enabled": false,
+  "editor.stickyScroll.enabled": false,
   "symbols.hidesExplorerArrows": false,
-  "workbench.colorTheme": "One Dark Pro"
+  "workbench.productIconTheme": "fluent-icons"
 }
