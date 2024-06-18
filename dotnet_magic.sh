@@ -802,6 +802,20 @@ FodyWeavers.xsd
 *.sln.iml
 EOL
 
+touch readme.md
+cat <<EOL > readme.md
+<div align="center">
+
+## $PROJECT_NAME
+
+</div>
+
+## Intro
+
+## Main Functionalities
+
+EOL
+
 git init
 git add .
 git commit -m "feat: init repo 💲"
