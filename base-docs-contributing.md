@@ -37,6 +37,7 @@
 - Write clean, readable, and maintainable code.
 - Follow the [Microsoft C# Coding Conventions](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions).
 - Use meaningful names for variables, methods, and classes.
+- Always prefer readability and simplicity over syntactic sugar
 
 ### C# 12 and .NET 8 Specific Guidelines
 - Leverage new features in C# 12 and .NET 8 when appropriate, but ensure they are used appropriately and consistently.
