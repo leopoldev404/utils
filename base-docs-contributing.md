@@ -14,22 +14,21 @@
 ## Code of Conduct
 
 ## Getting Started
-1. Fork the repository.
-2. Clone your fork.
+1. Clone the repository.
     ```sh
-    git clone https://github.com/your-username/email-processor-service.git
+    git clone https://github.com/your-username/repository.git
     ```
-3. Navigate to the project directory.
+2. Navigate to the project directory.
     ```sh
-    cd email-processor-service
+    cd repository
     ```
-4. Install dependencies.
+3. Install dependencies.
     ```sh
     dotnet restore
     ```
-5. Create a new branch for your feature or bugfix.
+4. Create a new branch for your feature or bugfix.
     ```sh
-    git checkout -b feature/your-feature-name
+    git switch -c feature/your-feature-name
     ```
 
 ## Code Style Guidelines
@@ -109,7 +108,7 @@
 ## Branching and Pull Requests
 1. Create a new branch for each feature or bugfix.
     ```sh
-    git checkout -b feature/your-feature-name
+    git switch -c feat/your-feature-name
     ```
 2. Make your changes.
 3. Ensure all tests pass.
