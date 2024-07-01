@@ -1,4 +1,4 @@
-# Repository - Service Name
+# Project Name
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -18,71 +18,55 @@
 
 ## Introduction
 ### Overview
-A short description of the service and its functionality
+Provide a brief overview of the project. Explain what the project is, its purpose, and the main features.
 
 ### Motivation
-Why the service has been developed
+Explain the motivation behind the project. Why was this project started? What problems does it solve?
 
 ### Goals
-- First goal
-- Second Goal
-- ...
+List the primary goals of the project. What are you aiming to achieve with this project?
+
+---
 
 ## Architecture
-### Project Structure
-- **docker**: 
-  - Description: Reads emails and downloads attachments.
-  - Dependencies: Microsoft Graph API.
-- **Attachment Processor**: 
-  - Description: Processes downloaded attachments.
-  - Dependencies: Custom processing logic.
-- **Blob Storage Service**: 
-  - Description: Saves files to Azure Blob Storage.
-  - Dependencies: Azure Storage SDK.
-- **Scheduler**: 
-  - Description: Triggers the service.
-  - Dependencies: .NET Background Service.
+### High-Level Overview
+Describe the overall architecture of the project. Include a high-level diagram if possible.
+
+### Components
+- **Component Name**: Brief description of the component and its responsibilities.
+- **Component Name**: Brief description of the component and its responsibilities.
 
 ### Data Flow
-1. When this happens (eg. could be scheduled, event trigger, or a rest service)
-2. Then this happens (eg. send a notification, send message to a queue)
-3. Also this happens (eg. save data to db)
+Explain how data flows through the system. Include diagrams if necessary to illustrate the data flow.
+
+---
 
 ## Setup and Installation
 ### Prerequisites
-- [.NET 8 SDK]()
-- [Docker]()
-- [Docker Compose]()
-- Some Requirements
+List the software and tools required to set up the project (e.g., specific SDKs, database systems, etc.).
 
 ### Installation Steps
 1. Clone the repository.
     ```sh
-    git clone https://github.com/your-repo/service.git
+    git clone https://github.com/your-repo/project-name.git
     ```
 2. Navigate to the project directory.
     ```sh
-    cd service
+    cd project-name
     ```
 3. Install dependencies.
     ```sh
-    make init
+    [command to install dependencies]
     ```
 4. Configure environment variables (see Configuration section).
 
 ### Quick Start
-To run the service locally:
-1. Set up the necessary environment variables.
-2. Run the service.
-    ```sh
-    dotnet run
-    ```
+Provide a quick start guide to run the project locally.
+
+---
 
 ## Usage
 ### Running the Application
-To start the service:
+Instructions on how to run the application.
 ```sh
-dotnet run
-```
-
-
+[command to run the application]
