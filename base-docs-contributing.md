@@ -1,97 +1,39 @@
-# Contributing to Service
+# Contributing to Project Name
 
 ## Table of Contents
-1. [Code of Conduct](#code-of-conduct)
-2. [Getting Started](#getting-started)
-3. [Code Style Guidelines](#code-style-guidelines)
-4. [Commit Message Guidelines](#commit-message-guidelines)
-5. [Branching and Pull Requests](#branching-and-pull-requests)
-6. [Testing](#testing)
-7. [Issue Reporting](#issue-reporting)
+1. [Getting Started](#getting-started)
+2. [Code Style Guidelines](#code-style-guidelines)
+3. [Commit Message Guidelines](#commit-message-guidelines)
+4. [Branching and Pull Requests](#branching-and-pull-requests)
+5. [Testing](#testing)
+6. [Issue Reporting](#issue-reporting)
 
 ---
 
-## Code of Conduct
-
 ## Getting Started
-1. Clone the repository.
+1. Fork the repository.
+2. Clone your fork.
     ```sh
-    git clone https://github.com/your-username/repository.git
+    git clone https://github.com/your-username/project-name.git
     ```
-2. Navigate to the project directory.
+3. Navigate to the project directory.
     ```sh
-    cd repository
+    cd project-name
     ```
-3. Install dependencies.
+4. Install dependencies.
     ```sh
-    dotnet restore
+    [command to install dependencies]
     ```
-4. Create a new branch for your feature or bugfix.
+5. Create a new branch for your feature or bugfix.
     ```sh
-    git switch -c feature/your-feature-name
+    git checkout -b feature/your-feature-name
     ```
 
 ## Code Style Guidelines
-### General Guidelines
 - Write clean, readable, and maintainable code.
+- Prefer readability and simplicity over syntactic sugar.
 - Follow the [Microsoft C# Coding Conventions](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions).
 - Use meaningful names for variables, methods, and classes.
-- Always prefer readability and simplicity over syntactic sugar
-
-### C# 12 and .NET 8 Specific Guidelines
-- Leverage new features in C# 12 and .NET 8 when appropriate, but ensure they are used appropriately and consistently.
-- Ensure all public methods and classes have XML documentation comments.
-- Use expression-bodied members for single-line methods and properties.
-- Prefer pattern matching and switch expressions where applicable.
-
-### Naming Conventions
-- **Classes and Interfaces**: PascalCase
-    ```csharp
-    public class EmailProcessorService
-    {
-    }
-    ```
-- **Methods**: PascalCase
-    ```csharp
-    public void ProcessEmails()
-    {
-    }
-    ```
-- **Variables and Parameters**: camelCase
-    ```csharp
-    private string emailAddress;
-    ```
-- **Constants**: PascalCase
-    ```csharp
-    private const int DefaultInterval = 2;
-    ```
-
-### Code Formatting
-- Use 4 spaces for indentation.
-- Place curly braces on a new line.
-    ```csharp
-    if (condition)
-    {
-        // code
-    }
-    ```
-- Keep lines under 120 characters.
-
-### Commenting
-- Use XML documentation comments for all public members.
-    ```csharp
-    /// <summary>
-    /// Processes the emails in the specified folder.
-    /// </summary>
-    /// <param name="folderId">The ID of the folder.</param>
-    public void ProcessEmails(string folderId)
-    {
-    }
-    ```
-- Use regular comments for explaining complex logic and non-obvious code.
-    ```csharp
-    // This is a workaround for issue #123
-    ```
 
 ## Commit Message Guidelines
 - Use the format `type(scope): message`.
@@ -108,7 +50,7 @@
 ## Branching and Pull Requests
 1. Create a new branch for each feature or bugfix.
     ```sh
-    git switch -c feat/your-feature-name
+    git checkout -b feature/your-feature-name
     ```
 2. Make your changes.
 3. Ensure all tests pass.
@@ -126,7 +68,7 @@
 - Place unit tests in the `Unit` folder and integration tests in the `Integration` folder.
 - Run all tests before submitting a pull request.
     ```sh
-    dotnet test
+    [command to run tests]
     ```
 
 ## Issue Reporting
