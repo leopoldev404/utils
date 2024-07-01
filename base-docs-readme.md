@@ -64,3 +64,10 @@ List the software and tools required to set up the project (e.g., specific SDKs,
 Instructions on how to run the application.
 ```sh
 [command to run the application]
+```
+
+### Test
+Instructions on how to run unit tests for the application.
+```sh
+[command to run the application]
+```
