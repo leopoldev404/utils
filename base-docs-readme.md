@@ -41,7 +41,7 @@ Explain how data flows through the system. Include diagrams if necessary to illu
 
 ---
 
-## Setup and Installation
+## Getting Started
 ### Prerequisites
 List the software and tools required to set up the project (e.g., specific SDKs, database systems, etc.).
 
@@ -60,13 +60,7 @@ List the software and tools required to set up the project (e.g., specific SDKs,
     ```
 4. Configure environment variables (see Configuration section).
 
-### Quick Start
-Provide a quick start guide to run the project locally.
-
----
-
-## Usage
-### Running the Application
+### Run
 Instructions on how to run the application.
 ```sh
 [command to run the application]
