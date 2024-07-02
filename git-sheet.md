@@ -1,2 +1,3 @@
-- custom log: git log --pretty=format:"💥 %h %d 👨‍💻%an: ✅ %s"
-- log graph: git log --all --decorate --oneline --graph 
+- **custom log**: git log --pretty=format:"💥 %h %d 👨‍💻%an: ✅ %s"
+- **log graph**: git log --all --decorate --oneline --graph 
+- **get file from another branch**: git checkout <branch> <path/to/file>
