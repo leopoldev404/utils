@@ -7,7 +7,6 @@
   "editor.bracketPairColorization.enabled": false,
   "editor.fontFamily": "jetbrains mono",
   "editor.lineHeight": 1.6,
-  "editor.rulers": [88],
   "editor.fontSize": 13,
   "editor.inlayHints.enabled": "off",
   "editor.minimap.enabled": false,
@@ -15,7 +14,7 @@
   "editor.fontLigatures": true,
   "editor.codeLensFontFamily": "gitlab sans",
   "editor.lineNumbers": "off",
-  "markdown.preview.fontFamily": "gitlab sans",
+  "markdown.preview.fontFamily": "Segoe UI",
   "editor.cursorStyle": "underline",
   "editor.cursorBlinking": "smooth",
   "workbench.startupEditor": "none",
@@ -75,6 +74,7 @@
   "window.titleBarStyle": "custom",
   "terminal.integrated.fontSize": 13,
   "glassit.alpha": 255,
+  "editor.rulers": [100],
   "javascript.updateImportsOnFileMove.enabled": "always",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -84,19 +84,19 @@
   },
   "workbench.colorCustomizations": {
     "[One Dark Pro]": {
-      "editor.background": "#1F1E24",
-      "activityBar.background": "#1F1E24",
-      "sideBar.background": "#1F1E24",
-      "titleBar.activeBackground": "#1F1E24",
-      "statusBar.background": "#1F1E24",
-      "terminal.background": "#1F1E24",
+      "editor.background": "#20222C",
+      "activityBar.background": "#20222C",
+      "sideBar.background": "#20222C",
+      "titleBar.activeBackground": "#20222C",
+      "statusBar.background": "#20222C",
+      "terminal.background": "#20222C",
       "terminal.foreground": "#ABB2BF",
-      "tab.activeBorder": "#1F1E24",
-      "tab.inactiveBackground": "#1F1E24",
-      "panel.background": "#1F1E24",
-      "statusBar.border": "#1F1E24",
-      "titleBar.border": "#1F1E24",
-      "editor.lineHighlightBackground": "#1F1E24"
+      "tab.activeBorder": "#20222C",
+      "tab.inactiveBackground": "#20222C",
+      "panel.background": "#20222C",
+      "statusBar.border": "#20222C",
+      "titleBar.border": "#20222C",
+      "editor.lineHighlightBackground": "#20222C"
     }
   },
   "editor.tokenColorCustomizations": {
@@ -127,11 +127,6 @@
   },
   "security.workspace.trust.untrustedFiles": "open",
   "terminal.integrated.defaultProfile.linux": "bash",
-  "remote.SSH.remotePlatform": {
-    "3.75.216.170": "linux",
-    "aws-ec2-dev-01": "linux",
-    "aws-ec2-dev-02": "linux"
-  },
   "cSpell.allowCompoundWords": true,
   "cSpell.userWords": [
     "ADOM",
@@ -207,6 +202,7 @@
     "Roboto",
     "sdwan",
     "sdwanedge",
+    "Segoe",
     "Serilog",
     "sharded",
     "siem",
@@ -235,21 +231,17 @@
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format",
+    "editor.formatOnSave": true
+  },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[python]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "charliermarsh.ruff",
-    "editor.codeActionsOnSave": {
-      "source.fixAll": "explicit",
-      "source.organizeImports": "explicit"
-    }
   },
   "editor.formatOnSave": true,
   "[csharp]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "ms-dotnettools.csharp"
+    "editor.defaultFormatter": "csharpier.csharpier-vscode"
   },
   "terminal.integrated.gpuAcceleration": "off",
   "yaml.customTags": [
@@ -284,14 +276,6 @@
   "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "monospace-icons",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "python.analysis.extraPaths": [
-    "c:\\Users\\leopol\\.vscode\\extensions\\continue.continue-0.2.0-win32-x64",
-    "c:\\Users\\leopol\\.vscode\\extensions\\continue.continue-0.6.9-win32-x64"
-  ],
-  "python.autoComplete.extraPaths": [
-    "c:\\Users\\leopol\\.vscode\\extensions\\continue.continue-0.2.0-win32-x64",
-    "c:\\Users\\leopol\\.vscode\\extensions\\continue.continue-0.6.9-win32-x64"
-  ],
   "yaml.schemas": {
     "file:///home/leo/.vscode-server/extensions/docsmsft.docs-yaml-1.0.4/dist/toc.schema.json": "/toc\\.yml/i"
   },
@@ -303,13 +287,12 @@
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "go.toolsManagement.autoUpdate": true,
   "extensions.ignoreRecommendations": true,
   "workbench.editor.showTabs": "none",
-  "terminal.integrated.enableMultiLinePasteWarning": "always",
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
   "workbench.colorTheme": "One Dark Pro",
   "[aspnetcorerazor]": {
-    "editor.defaultFormatter": "ms-dotnettools.csharp"
+    "editor.defaultFormatter": "csharpier.csharpier-vscode"
   },
   "update.showReleaseNotes": false,
   "workbench.layoutControl.enabled": false,
@@ -317,6 +300,6 @@
   "window.menuBarVisibility": "compact",
   "breadcrumbs.enabled": false,
   "editor.stickyScroll.enabled": false,
-  "symbols.hidesExplorerArrows": false,
-  "workbench.productIconTheme": "fluent-icons"
+  "workbench.productIconTheme": "fluent-icons",
+  "editor.accessibilitySupport": "off"
 }
