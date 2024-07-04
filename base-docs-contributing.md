@@ -47,7 +47,7 @@
 ## Branching and Pull Requests
 1. Create a new branch for each feature or bugfix.
     ```sh
-    git switch -b feat/your-feature-name
+    git switch -c feat/your-feature-name
     ```
 2. Make your changes.
 3. Ensure all tests pass.
