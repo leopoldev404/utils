@@ -5,8 +5,8 @@
   "explorer.compactFolders": false,
   "zenMode.hideActivityBar": true,
   "editor.bracketPairColorization.enabled": false,
-  "editor.fontFamily": "jetbrains mono",
-  "editor.lineHeight": 1.6,
+  "editor.fontFamily": "Jetbrains Mono",
+  "editor.lineHeight": 1.7,
   "editor.fontSize": 13,
   "editor.inlayHints.enabled": "off",
   "editor.minimap.enabled": false,
@@ -74,7 +74,6 @@
   "window.titleBarStyle": "custom",
   "terminal.integrated.fontSize": 13,
   "glassit.alpha": 255,
-  "editor.rulers": [100],
   "javascript.updateImportsOnFileMove.enabled": "always",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -84,19 +83,19 @@
   },
   "workbench.colorCustomizations": {
     "[One Dark Pro]": {
-      "editor.background": "#20222C",
-      "activityBar.background": "#20222C",
-      "sideBar.background": "#20222C",
-      "titleBar.activeBackground": "#20222C",
-      "statusBar.background": "#20222C",
-      "terminal.background": "#20222C",
+      "editor.background": "#19191C",
+      "activityBar.background": "#19191C",
+      "sideBar.background": "#19191C",
+      "titleBar.activeBackground": "#19191C",
+      "statusBar.background": "#19191C",
+      "terminal.background": "#19191C",
       "terminal.foreground": "#ABB2BF",
-      "tab.activeBorder": "#20222C",
-      "tab.inactiveBackground": "#20222C",
-      "panel.background": "#20222C",
-      "statusBar.border": "#20222C",
-      "titleBar.border": "#20222C",
-      "editor.lineHighlightBackground": "#20222C"
+      "tab.activeBorder": "#19191C",
+      "tab.inactiveBackground": "#19191C",
+      "panel.background": "#19191C",
+      "statusBar.border": "#19191C",
+      "titleBar.border": "#19191C",
+      "editor.lineHighlightBackground": "#19191C"
     }
   },
   "editor.tokenColorCustomizations": {
@@ -104,18 +103,24 @@
       "keywords": "#569CD6"
     },
     "[One Dark Pro]": {
-      "variables": "#ABB2BF",
+      "variables": "#D6D6DD",
       "textMateRules": [
         {
           "scope": ["variable.parameter", "variable.other.readwrite"],
           "settings": {
-            "foreground": "#ABB2BF"
+            "foreground": "#D6D6DD"
           }
         },
         {
-          "scope": "variable.other.property",
+          "scope": [
+            "variable.other.property",
+            "entity.name.variable.field.cs",
+            "variable.other.object.property.cs",
+            "support.type.property-name.json",
+            "support.type.property-name.json punctuation"
+          ],
           "settings": {
-            "foreground": "#DE7C84"
+            "foreground": "#AAA0FA"
           }
         }
       ]
@@ -148,10 +153,14 @@
     "CQRS",
     "devid",
     "devs",
+    "DISTINTE",
     "docsmsft",
     "donot",
     "dvmdb",
+    "Efil",
+    "Ente",
     "esbenp",
+    "esito",
     "fira",
     "Fleety",
     "forti",
@@ -168,6 +177,7 @@
     "Inno",
     "innodb",
     "INOUT",
+    "integrazione",
     "Intelli",
     "ISNULL",
     "isort",
@@ -199,11 +209,14 @@
     "pytest",
     "Quizz",
     "redisdb",
+    "resharpervscode",
     "Roboto",
     "sdwan",
     "sdwanedge",
+    "Segec",
     "Segoe",
     "Serilog",
+    "Servizio",
     "sharded",
     "siem",
     "signin",
@@ -274,7 +287,7 @@
     "!Split sequence"
   ],
   "workbench.editor.enablePreview": false,
-  "workbench.iconTheme": "monospace-icons",
+  "workbench.iconTheme": "catppuccin-mocha",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "yaml.schemas": {
     "file:///home/leo/.vscode-server/extensions/docsmsft.docs-yaml-1.0.4/dist/toc.schema.json": "/toc\\.yml/i"
@@ -301,5 +314,6 @@
   "breadcrumbs.enabled": false,
   "editor.stickyScroll.enabled": false,
   "workbench.productIconTheme": "fluent-icons",
-  "editor.accessibilitySupport": "off"
+  "editor.accessibilitySupport": "off",
+  "window.commandCenter": false
 }
