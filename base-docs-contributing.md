@@ -35,13 +35,13 @@
 ## Commit Message Guidelines
 - Use the format `type(scope): message`.
     - **type**: The kind of change (e.g., `feat`, `fix`, `refac`).
-    - **scope**: The module or component that has been changed.
+    - **scope**: The module or component that has been changed (e.g., `dal`, `bl`, `web`, `api`, `common`).
     - **message**: A short, clear description of the change.
 - Example commit messages:
     ```plaintext
-    feat(email-reader): add support for reading emails from multiple folders
-    fix(blob-storage): resolve issue with file upload timeout
-    refac(attachment-processor): improve file processing efficiency
+    feat(dal): add get method
+    fix(common): update scheduler configuration with new values 
+    refac(bl): remove unused imports | remove unused packages
     ```
 
 ## Branching and Pull Requests
