@@ -1,4 +1,4 @@
-# Contributing to Project Name
+# Contributing
 
 ## Table of Contents
 1. [Getting Started](#getting-started)
