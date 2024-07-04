@@ -31,6 +31,10 @@
 - Follow the [Microsoft C# Coding Conventions](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions).
 - Use meaningful names for variables, methods, and classes.
 - Always use curly braces syntax.
+- Prefer declaring variable types over `var` keyword.
+- Use `var` only if variable type is no-ambiguos.
+- Do not hard code literal values or magic number.
+- Always use last available packages and features.
 
 ## Commit Message Guidelines
 - Use the format `type(scope): message`.
