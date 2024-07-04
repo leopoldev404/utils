@@ -24,16 +24,13 @@
     ```sh
     [command to install dependencies]
     ```
-5. Create a new branch for your feature or bugfix.
-    ```sh
-    git checkout -b feature/your-feature-name
-    ```
 
 ## Code Style Guidelines
 - Write clean, readable, and maintainable code.
 - Prefer readability and simplicity over syntactic sugar.
 - Follow the [Microsoft C# Coding Conventions](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions).
 - Use meaningful names for variables, methods, and classes.
+- Always use curly braces syntax.
 
 ## Commit Message Guidelines
 - Use the format `type(scope): message`.
@@ -50,14 +47,14 @@
 ## Branching and Pull Requests
 1. Create a new branch for each feature or bugfix.
     ```sh
-    git checkout -b feature/your-feature-name
+    git switch -b feat/your-feature-name
     ```
 2. Make your changes.
 3. Ensure all tests pass.
 4. Commit your changes using the specified commit message format.
 5. Push your branch to your fork.
     ```sh
-    git push origin feature/your-feature-name
+    git push origin feat/your-feature-name
     ```
 6. Open a pull request to the `main` branch of the original repository.
 7. Provide a clear description of your changes and any relevant issue numbers.
