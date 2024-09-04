@@ -1,0 +1,109 @@
+using System.ServiceModel;
+using DotNet.Testcontainers.Builders;
+using DotNet.Testcontainers.Containers;
+using InadQuery.Api;
+using InadQuery.Bl.Abstractions;
+using InadQuery.Bl.Inipec.Settings;
+using InadQuery.Bl.Service;
+using InadQuery.Dal.Inipec;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.AspNetCore.TestHost;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
+using Xunit;
+
+namespace InadQuery.IntegrationTests;
+
+public sealed class InadQueryServiceFactory
+    : WebApplicationFactory<IApiAssemblyMarker>,
+        IAsyncLifetime
+{
+    private IContainer? dbContainer;
+    private IContainer? imposterContainer;
+    private const ushort DB_CONTAINER_PORT = 5432;
+    private const ushort IMPOSTER_CONTAINER_PORT = 9999;
+
+    async Task IAsyncLifetime.InitializeAsync()
+    {
+        dbContainer = new ContainerBuilder()
+            .WithImage("postgres")
+            .WithPortBinding(port: DB_CONTAINER_PORT, assignRandomHostPort: true)
+            .WithEnvironment("POSTGRES_DB", "db")
+            .WithEnvironment("POSTGRES_USER", "user")
+            .WithEnvironment("POSTGRES_PASSWORD", "psw")
+            .WithWaitStrategy(Wait.ForUnixContainer().UntilPortIsAvailable(port: DB_CONTAINER_PORT))
+            .WithCleanUp(true)
+            .Build();
+
+        imposterContainer = new ContainerBuilder()
+            .WithImage("outofcoffee/imposter-all")
+            .WithResourceMapping("../../../../../imposter-config", "/opt/imposter/config")
+            .WithPortBinding(port: IMPOSTER_CONTAINER_PORT, assignRandomHostPort: true)
+            .WithCleanUp(true)
+            .Build();
+
+        await dbContainer.StartAsync().ConfigureAwait(false);
+        await imposterContainer.StartAsync().ConfigureAwait(false);
+    }
+
+    protected override void ConfigureWebHost(IWebHostBuilder builder)
+    {
+        UpdateSettingsWithContainersConfiguration(builder);
+
+        builder.ConfigureTestServices(services =>
+        {
+            services.Remove(services.Single(s => s.ServiceType == typeof(IInipecBroker)));
+
+            services.AddSingleton<IInipecBroker>(sp =>
+            {
+                IOptions<InipecSettings> options = sp.GetRequiredService<
+                    IOptions<InipecSettings>
+                >();
+
+                BasicHttpBinding httpBinding = new(BasicHttpSecurityMode.None);
+
+                httpBinding.Security.Transport.ClientCredentialType =
+                    HttpClientCredentialType.Basic;
+
+                httpBinding.MaxReceivedMessageSize = 20000000;
+
+                ChannelFactory<FornituraPecChannel> factory =
+                    new(httpBinding, new EndpointAddress(options.Value.BaseUrl));
+
+                return new InipecBroker(factory, options);
+            });
+        });
+
+        base.ConfigureWebHost(builder);
+    }
+
+    private void UpdateSettingsWithContainersConfiguration(IWebHostBuilder builder)
+    {
+        builder.UseSetting(
+            key: "ConnectionStrings:DefaultConnection",
+            value: $"Host={dbContainer!.Hostname};Port={dbContainer!.GetMappedPublicPort(DB_CONTAINER_PORT)};Database=db;Username=user;Password=psw;"
+        );
+
+        builder.UseSetting(
+            key: "Inipec:BaseUrl",
+            value: $"http://{imposterContainer!.Hostname}:{imposterContainer!.GetMappedPublicPort(IMPOSTER_CONTAINER_PORT)}/ServizioFornituraPec"
+        );
+
+        builder.UseSetting(
+            key: "CeoInad:BaseUrl",
+            value: $"http://{imposterContainer!.Hostname}:{imposterContainer!.GetMappedPublicPort(IMPOSTER_CONTAINER_PORT)}/api/v2"
+        );
+
+        builder.UseSetting(
+            key: "CeoInad:CallbackEndpoint",
+            value: $"http://localhost:5000/CeoInadCallBack/PostResponseListDigitalAddress"
+        );
+    }
+
+    async Task IAsyncLifetime.DisposeAsync()
+    {
+        await dbContainer!.DisposeAsync();
+        await imposterContainer!.DisposeAsync();
+    }
+}
