@@ -1,0 +1,44 @@
+services:
+  db:
+    image: postgres
+    container_name: db
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: inad
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - db-data:/data/db
+
+  inipec_inad_imposter:
+    image: outofcoffee/imposter-all
+    container_name: inipec_inad_imposter
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./../imposter-config:/opt/imposter/config
+
+  inadquery:
+    container_name: inadquery
+    restart: always
+    build:
+      context: ../
+      dockerfile: ./docker/inadquery-dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      ASPENETCORE_ENVIRONMENT: Production
+      ASPNETCORE_URLS: "http://+:5000"
+      Auth__ApiKey: "12345"
+      ConnectionStrings__DefaultConnection: "Host=db;Port=5432;Database=inad;Username=postgres;Password=postgres;"
+      Inipec__BaseUrl: "http://localhost:8080/ServizioFornituraPec"
+      CeoInad__BaseUrl: "http://localhost:8080/api/v2"
+      CeoInad__CallbackEndpoint: "http://localhost:5000/CeoInadCallBack/PostResponseListDigitalAddress"
+    depends_on:
+      - db
+      - inipec_inad_imposter
+
+volumes:
+  db-data:
