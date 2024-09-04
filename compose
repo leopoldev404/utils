@@ -1,3 +1,6 @@
+docker compose -f docker/docker-compose.yml up
+docker compose -f docker/docker-compose.yml down
+
 services:
   db:
     image: postgres
