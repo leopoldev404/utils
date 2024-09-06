@@ -8,3 +8,23 @@ dotnet test specific test:
 ```
 dotnet test -c Release --filter "FullyQualifiedName=Namespace.Class.TestFunction"
 ```
+
+
+Connect to postgres db container
+
+```sh
+# list databases
+/l
+
+# connect do db
+/c database_name
+
+# list tables
+SELECT table_name 
+FROM information_schema.tables 
+WHERE table_schema = 'public';
+
+# list tables with postgres internal meta-command
+\dt
+
+```
