@@ -14,17 +14,23 @@ Connect to postgres db container
 
 ```sh
 # list databases
-/l
+\l
 
 # connect do db
-/c database_name
+\c database_name
 
 # list tables
-SELECT table_name 
-FROM information_schema.tables 
-WHERE table_schema = 'public';
+select table_name from information_schema.tables where table_schema = 'public';
 
 # list tables with postgres internal meta-command
 \dt
+
+# describe table
+select column_name, data_type
+from information_schema.columns
+where table_name = 'table_name' and table_schema = 'public';
+
+# describe table with postgres internal meta-command
+\d table_name;
 
 ```
