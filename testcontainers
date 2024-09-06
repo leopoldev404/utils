@@ -1,5 +1,5 @@
 public sealed class InadQueryServiceFactory
-    : WebApplicationFactory<IApiAssemblyMarker>,
+    : WebApplicationFactory<Program>,
         IAsyncLifetime
 {
     private IContainer? dbContainer;
