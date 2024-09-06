@@ -3,14 +3,20 @@
 [dotnet publish -c Release -r win-x64 --self-contained -p:PublishSingleFile=true -p:PublishReadyToRun=true]()
 
 
-dotnet test specific test:
+## Kill Docker Containers
+
+```bash
+docker stop $(docker ps -q) && docker rm $(docker ps -a -q)
+```
+
+## dotnet test specific test:
 
 ```
 dotnet test -c Release --filter "FullyQualifiedName=Namespace.Class.TestFunction"
 ```
 
 
-Connect to postgres db container
+## Connect to postgres db container
 
 ```sh
 # list databases
