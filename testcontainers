@@ -1,20 +1,3 @@
-using System.ServiceModel;
-using DotNet.Testcontainers.Builders;
-using DotNet.Testcontainers.Containers;
-using InadQuery.Api;
-using InadQuery.Bl.Abstractions;
-using InadQuery.Bl.Inipec.Settings;
-using InadQuery.Bl.Service;
-using InadQuery.Dal.Inipec;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc.Testing;
-using Microsoft.AspNetCore.TestHost;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Options;
-using Xunit;
-
-namespace InadQuery.IntegrationTests;
-
 public sealed class InadQueryServiceFactory
     : WebApplicationFactory<IApiAssemblyMarker>,
         IAsyncLifetime
@@ -22,7 +5,7 @@ public sealed class InadQueryServiceFactory
     private IContainer? dbContainer;
     private IContainer? imposterContainer;
     private const ushort DB_CONTAINER_PORT = 5432;
-    private const ushort IMPOSTER_CONTAINER_PORT = 9999;
+    private const ushort IMPOSTER_CONTAINER_PORT = 8080;
 
     async Task IAsyncLifetime.InitializeAsync()
     {
@@ -38,8 +21,10 @@ public sealed class InadQueryServiceFactory
 
         imposterContainer = new ContainerBuilder()
             .WithImage("outofcoffee/imposter-all")
-            .WithResourceMapping("../../../../../imposter-config", "/opt/imposter/config")
+            .WithResourceMapping("imposter-config", "/opt/imposter/config")
             .WithPortBinding(port: IMPOSTER_CONTAINER_PORT, assignRandomHostPort: true)
+            .WithEnvironment("IMPOSTER_CONFIG_SCAN_RECURSIVE", "true")
+            .WithEnvironment("IMPOSTER_AUTO_BASE_PATH", "true")
             .WithCleanUp(true)
             .Build();
 
@@ -97,7 +82,7 @@ public sealed class InadQueryServiceFactory
 
         builder.UseSetting(
             key: "CeoInad:CallbackEndpoint",
-            value: $"http://localhost:5000/CeoInadCallBack/PostResponseListDigitalAddress"
+            value: $"http://localhost/CeoInadCallBack/PostResponseListDigitalAddress"
         );
     }
 
