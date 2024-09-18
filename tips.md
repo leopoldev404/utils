@@ -19,6 +19,9 @@ dotnet test -c Release --filter "FullyQualifiedName=Namespace.Class.TestFunction
 ## Connect to postgres db container
 
 ```sh
+# connect to container
+docker exec -it <container_name_or_id> psql -U <username>
+
 # list databases
 \l
 
