@@ -1,138 +1,58 @@
 {
-  "editor.insertSpaces": false,
-  "editor.scrollBeyondLastLine": false,
-  "editor.scrollbar.verticalScrollbarSize": 8,
-  "editor.scrollbar.horizontalScrollbarSize": 8,
-  "window.title": "${dirty}${activeEditorShort}",
-  "workbench.statusBar.visible": false,
-  "workbench.tree.renderIndentGuides": "none",
-  "remote.autoForwardPorts": false,
-  "explorer.compactFolders": false,
-  "zenMode.hideActivityBar": true,
-  "editor.bracketPairColorization.enabled": false,
-  "editor.fontFamily": "jetbrains mono",
-  "editor.lineHeight": 1.7,
-  "editor.fontSize": 13,
-  "editor.inlayHints.enabled": "off",
-  "editor.minimap.enabled": false,
-  "editor.cursorSmoothCaretAnimation": "on",
-  "files.trimTrailingWhitespace": true,
-  "files.trimFinalNewlines": true,
-  "editor.fontLigatures": true,
-  "editor.codeLensFontFamily": "Jetbrains Mono",
-  "editor.lineNumbers": "off",
-  "markdown.preview.fontFamily": "Segoe UI",
-  "editor.cursorStyle": "underline",
-  "editor.cursorBlinking": "smooth",
-  "workbench.startupEditor": "none",
-  "workbench.settings.editor": "json",
-  "terminal.integrated.fontFamily": "Jetbrains Mono",
-  "terminal.integrated.defaultProfile.windows": "Dev",
-  "terminal.integrated.cursorStyle": "underline",
-  "editor.renderWhitespace": "none",
-  "terminal.integrated.profiles.windows": {
-    "PowerShell": {
-      "source": "PowerShell",
-      "icon": "terminal-powershell"
-    },
-    "Dev": {
-      "path": [
-        "${env:windir}\\Sysnative\\cmd.exe",
-        "${env:windir}\\System32\\cmd.exe"
-      ],
-      "args": [],
-      "overrideName": true,
-      "icon": "terminal-bash",
-      "color": "terminal.ansiCyan"
-    },
-    "Git Bash": {
-      "source": "Git Bash"
-    }
+  "[aspnetcorerazor]": {
+    "editor.defaultFormatter": "csharpier.csharpier-vscode"
   },
-  "terminal.integrated.cursorBlinking": true,
-  "editor.roundedSelection": true,
-  "editor.guides.indentation": false,
-  "editor.suggestSelection": "first",
-  "files.exclude": {
-    "**/__pycache__": true,
-    "**/.git": false,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-    "**/Thumbs.db": true,
-    "**/obj": true,
-    "**/bin": true,
-    "**/.classpath": true,
-    "**/.project": true,
-    "**/.settings": true,
-    "**/.factorypath": true,
-    "**/*.Identifier": true
+  "[csharp]": {
+    "editor.defaultFormatter": "csharpier.csharpier-vscode",
+    "editor.formatOnSave": true
   },
-  "explorer.confirmDragAndDrop": false,
-  "[json]": {
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "explorer.confirmDelete": false,
-  "diffEditor.ignoreTrimWhitespace": false,
-  "window.titleBarStyle": "custom",
-  "terminal.integrated.fontSize": 13,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "workbench.colorCustomizations": {
-    "[One Dark Pro]": {
-      "editor.background": "#282C34",
-      "activityBar.background": "#282C34",
-      "sideBar.background": "#282C34",
-      "titleBar.activeBackground": "#282C34",
-      "statusBar.background": "#282C34",
-      "terminal.background": "#282C34",
-      "terminal.foreground": "#ABB2BF",
-      "tab.activeBorder": "#282C34",
-      "tab.inactiveBackground": "#282C34",
-      "panel.background": "#282C34",
-      "statusBar.border": "#282C34",
-      "titleBar.border": "#282C34",
-      "editor.lineHighlightBackground": "#282C34"
-    }
-  },
-  "editor.tokenColorCustomizations": {
-    "[Default Dark Modern]": {
-      "keywords": "#569CD6"
-    },
-    "[One Dark Pro]": {
-      "textMateRules": [
-        {
-          "scope": ["variable.parameter", "variable.other.readwrite"],
-          "settings": {
-            "foreground": "#ABB2BF"
-          }
-        }
-      ]
-    }
-  },
-  "redhat.telemetry.enabled": false,
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "security.workspace.trust.untrustedFiles": "open",
-  "terminal.integrated.defaultProfile.linux": "bash",
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[properties]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format",
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "breadcrumbs.enabled": false,
+  "breadcrumbs.filePath": "off",
   "cSpell.allowCompoundWords": true,
   "cSpell.userWords": [
+    "Abilitato",
     "accedi",
     "ADOM",
     "adoms",
     "ADOMV",
     "agguff",
     "anyio",
+    "asmx",
     "Barba",
     "bitnami",
     "Blazor",
@@ -143,15 +63,22 @@
     "capellicode",
     "cascadia",
     "catppuccin",
+    "CEOINAD",
+    "ceoinadcallbackcontroller",
     "Certificazione",
     "CLOB",
     "cobertura",
+    "Codici",
     "Comune",
     "Contribuente",
     "correlato",
     "Coursera",
     "CQRS",
+    "credenziali",
+    "csvhelper",
+    "Dati",
     "Denominazione",
+    "Descrizione",
     "dettaglio",
     "devid",
     "devs",
@@ -159,12 +86,15 @@
     "dichiarante",
     "Dichiarazione",
     "Dichiarazioni",
+    "DISPONIBILE",
     "DISTINTE",
     "docsmsft",
     "Documento",
     "donot",
     "dvmdb",
     "Efil",
+    "ELABORAZIONE",
+    "elenco",
     "Ente",
     "esbenp",
     "esito",
@@ -177,6 +107,7 @@
     "Fornitura",
     "forti",
     "foslic",
+    "FPEC",
     "fwlog",
     "Gefil",
     "gefildb",
@@ -189,9 +120,14 @@
     "hdisk",
     "httpx",
     "IBAN",
+    "Identificativi",
     "Identificativo",
+    "Inad",
+    "inadquery",
+    "inadqueryservice",
     "Indirizzo",
     "Informazione",
+    "Inipec",
     "INITDB",
     "Inno",
     "innodb",
@@ -199,6 +135,7 @@
     "integrazione",
     "Intelli",
     "IOCR",
+    "ISCRIZIONE",
     "ISNULL",
     "isort",
     "jmeter",
@@ -210,13 +147,16 @@
     "Logispin",
     "maxvdom",
     "Mediat",
+    "mediatr",
     "meraki",
     "mgmt",
     "Modello",
     "msps",
     "MSPV",
+    "Mtom",
     "mypy",
     "mysqld",
+    "Newpsw",
     "noctis",
     "Notifica",
     "Npgsql",
@@ -224,14 +164,18 @@
     "nsxt",
     "opco",
     "opmode",
+    "ORDINE",
+    "outofcoffee",
     "Pignoramento",
     "Pptatore",
     "Pratica",
     "prds",
     "Presso",
     "prio",
+    "PROFESSIONISTA",
     "Punto",
     "puntofiscointeraction",
+    "Puntuale",
     "pycache",
     "pydantic",
     "pymongo",
@@ -243,11 +187,14 @@
     "Referer",
     "resharpervscode",
     "Residuo",
+    "risposta",
     "Roboto",
+    "scarico",
     "Scrivania",
     "sdwan",
     "sdwanedge",
     "Segec",
+    "segecnet",
     "Segoe",
     "Serilog",
     "Servizio",
@@ -258,6 +205,8 @@
     "signup",
     "ssids",
     "ssls",
+    "stato",
+    "Svcutil",
     "swvc",
     "Taglio",
     "tbody",
@@ -268,43 +217,143 @@
     "Tipologia",
     "todoapikey",
     "todos",
+    "Tynamix",
     "UCASE",
     "Ufficio",
     "UNCONFIGURED",
     "unflatten",
     "UNHEX",
     "Unica",
+    "Utente",
     "uvloop",
     "VBIT",
     "VDOM",
     "Velo",
     "velocloud",
     "verifiche",
+    "visurepec",
     "Vitess",
     "xdist",
     "Xunit",
     "yuki"
   ],
-  "[yaml]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "[shellscript]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format",
-    "editor.formatOnSave": true
-  },
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.accessibilitySupport": "off",
+  "editor.bracketPairColorization.enabled": false,
+  "editor.codeLensFontFamily": "cascadia mono",
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorStyle": "block-outline",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.foldingHighlight": false,
+  "editor.fontFamily": "jetbrains mono",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 13,
   "editor.formatOnSave": true,
-  "[python]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "charliermarsh.ruff"
+  "editor.guides.indentation": false,
+  "editor.inlayHints.enabled": "off",
+  "editor.insertSpaces": false,
+  "editor.lineHeight": 1.6,
+  "editor.lineNumbers": "off",
+  "editor.matchBrackets": "near",
+  "editor.minimap.enabled": false,
+  "editor.mouseWheelZoom": true,
+  "editor.renderLineHighlight": "none",
+  "editor.renderWhitespace": "none",
+  "editor.roundedSelection": true,
+  "editor.scrollBeyondLastLine": false,
+  "editor.scrollbar.horizontalScrollbarSize": 8,
+  "editor.scrollbar.verticalScrollbarSize": 0,
+  "editor.stickyScroll.enabled": false,
+  "editor.suggestSelection": "first",
+  "editor.tokenColorCustomizations": {
+    "[Default Dark Modern]": {
+      "keywords": "#569CD6"
+    }
   },
-  "[csharp]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "csharpier.csharpier-vscode"
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "extensions.ignoreRecommendations": true,
+  "files.exclude": {
+    "**/*.Identifier": true,
+    "**/.DS_Store": true,
+    "**/.classpath": true,
+    "**/.factorypath": true,
+    "**/.git": false,
+    "**/.hg": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.svn": true,
+    "**/CVS": true,
+    "**/Thumbs.db": true,
+    "**/__pycache__": true,
+    "**/bin": true,
+    "**/obj": true
   },
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "git.openRepositoryInParentFolders": "never",
+  "gitlens.mode.active": "zen",
+  "glassit.alpha": 205,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "markdown.preview.fontFamily": "Segoe UI",
+  "redhat.telemetry.enabled": false,
+  "remote.autoForwardPorts": false,
+  "security.allowedUNCHosts": ["wsl.localhost"],
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "underline",
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.defaultProfile.windows": "Dev",
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.fontFamily": "meslolgs nf",
+  "terminal.integrated.fontSize": 13,
   "terminal.integrated.gpuAcceleration": "off",
+  "terminal.integrated.profiles.windows": {
+    "Dev": {
+      "args": [],
+      "color": "terminal.ansiCyan",
+      "icon": "terminal-bash",
+      "overrideName": true,
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ]
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "PowerShell": {
+      "icon": "terminal-powershell",
+      "source": "PowerShell"
+    }
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "update.showReleaseNotes": false,
+  "window.commandCenter": false,
+  "window.menuBarVisibility": "compact",
+  "window.title": "${dirty}${activeEditorShort}",
+  "window.titleBarStyle": "custom",
+  "workbench.activityBar.location": "hidden",
+  "workbench.colorCustomizations": {
+    "[*]": {
+      "editorCursor.foreground": "#9CDCFE",
+      "editorGroup.border": "#171F2B",
+      "scrollbar.shadow": "#171F2B"
+    }
+  },
+  "workbench.colorTheme": "Monospace Dark",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.showTabs": "none",
+  "workbench.iconTheme": "monospace-icons",
+  "workbench.layoutControl.enabled": false,
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.settings.editor": "json",
+  "workbench.startupEditor": "none",
+  "workbench.statusBar.visible": false,
+  "workbench.tree.enableStickyScroll": false,
+  "workbench.tree.renderIndentGuides": "none",
   "yaml.customTags": [
     "!And",
     "!And sequence",
@@ -334,32 +383,12 @@
     "!Split",
     "!Split sequence"
   ],
-  "workbench.editor.enablePreview": false,
-  "workbench.iconTheme": "catppuccin noctis icons",
-  "typescript.updateImportsOnFileMove.enabled": "always",
   "yaml.schemas": {
     "file:///home/leo/.vscode-server/extensions/docsmsft.docs-yaml-1.0.4/dist/toc.schema.json": "/toc\\.yml/i"
   },
-  "git.openRepositoryInParentFolders": "never",
-  "workbench.activityBar.location": "hidden",
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "extensions.ignoreRecommendations": true,
-  "workbench.editor.showTabs": "none",
-  "terminal.integrated.enableMultiLinePasteWarning": "never",
-  "[aspnetcorerazor]": {
-    "editor.defaultFormatter": "csharpier.csharpier-vscode"
-  },
-  "update.showReleaseNotes": false,
-  "workbench.layoutControl.enabled": false,
-  "breadcrumbs.enabled": false,
-  "editor.stickyScroll.enabled": false,
-  "editor.accessibilitySupport": "off",
-  "window.commandCenter": false,
-  "catppuccin-noctis-icons.hidesExplorerArrows": false,
-  "window.menuBarVisibility": "compact"
+  "zenMode.centerLayout": true,
+  "zenMode.fullScreen": true,
+  "zenMode.hideActivityBar": true,
+  "zenMode.hideLineNumbers": true,
+  "zenMode.showTabs": "none"
 }
