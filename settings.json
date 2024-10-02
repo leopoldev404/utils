@@ -248,12 +248,12 @@
   "editor.foldingHighlight": false,
   "editor.fontFamily": "jetbrains mono",
   "editor.fontLigatures": true,
-  "editor.fontSize": 13,
+  "editor.fontSize": 14,
   "editor.formatOnSave": true,
   "editor.guides.indentation": false,
   "editor.inlayHints.enabled": "off",
   "editor.insertSpaces": false,
-  "editor.lineHeight": 1.6,
+  "editor.lineHeight": 1.7,
   "editor.lineNumbers": "off",
   "editor.matchBrackets": "near",
   "editor.minimap.enabled": false,
@@ -269,6 +269,19 @@
   "editor.tokenColorCustomizations": {
     "[Default Dark Modern]": {
       "keywords": "#569CD6"
+    },
+    "[One Dark Pro]": {
+      "textMateRules": [
+        {
+          "scope": [
+            "support.type.property-name.json",
+            "support.type.property-name.json punctuation"
+          ],
+          "settings": {
+            "foreground": "#E06C75"
+          }
+        }
+      ]
     }
   },
   "explorer.compactFolders": false,
@@ -300,7 +313,6 @@
   "markdown.preview.fontFamily": "Segoe UI",
   "redhat.telemetry.enabled": false,
   "remote.autoForwardPorts": false,
-  "security.allowedUNCHosts": ["wsl.localhost"],
   "security.workspace.trust.untrustedFiles": "open",
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "underline",
@@ -338,12 +350,24 @@
   "workbench.activityBar.location": "hidden",
   "workbench.colorCustomizations": {
     "[*]": {
+      "editor.background": "#282C34",
+      "activityBar.background": "#282C34",
+      "sideBar.background": "#282C34",
+      "titleBar.activeBackground": "#282C34",
+      "statusBar.background": "#282C34",
+      "terminal.background": "#282C34",
+      "terminal.foreground": "#c9c9c9",
+      "tab.activeBorder": "#282C34",
+      "tab.inactiveBackground": "#282C34",
+      "panel.background": "#282C34",
+      "statusBar.border": "#282C34",
+      "titleBar.border": "#282C34",
+      "editor.lineHighlightBackground": "#282C34",
       "editorCursor.foreground": "#9CDCFE",
-      "editorGroup.border": "#171F2B",
-      "scrollbar.shadow": "#171F2B"
+      "editorGroup.border": "#282C34",
+      "scrollbar.shadow": "#282C34"
     }
   },
-  "workbench.colorTheme": "Monospace Dark",
   "workbench.editor.enablePreview": false,
   "workbench.editor.showTabs": "none",
   "workbench.iconTheme": "monospace-icons",
@@ -390,5 +414,6 @@
   "zenMode.fullScreen": true,
   "zenMode.hideActivityBar": true,
   "zenMode.hideLineNumbers": true,
-  "zenMode.showTabs": "none"
+  "zenMode.showTabs": "none",
+  "workbench.colorTheme": "One Dark Pro"
 }
