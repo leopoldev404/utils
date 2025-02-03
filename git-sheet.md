@@ -1,3 +1,4 @@
 - **custom log**: `git log --pretty=format:"💥 %h %d 👨‍💻%an: ✅ %s"`
+- git log --pretty=format:"💥 %h 💻 %an ⌛ %ad : %s" --date=format:%Y-%m-%dT%H:%M
 - **log graph**: `git log --all --decorate --oneline --graph`
 - **get file from another branch**: `git checkout feat-branch path/to/file`
